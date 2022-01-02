@@ -13,7 +13,7 @@
       "matches": ["*://*.discord.com/*"],
       "run_at": "document_end",
       "css": ["style.css"],
-      "js": ["background.js"]
+      "js": ["emotes.js","background.js"]
     }
   ],
   "permissions": [
