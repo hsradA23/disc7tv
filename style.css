@@ -1,0 +1,6 @@
+.customEmote{
+    object-fit: contain;
+    height: 1.5em;
+    width: auto;
+    vertical-align: bottom;
+}

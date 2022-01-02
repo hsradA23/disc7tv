@@ -1,0 +1,23 @@
+{
+  "manifest_version" : 2,
+  "name" : "Discord7tv",
+  "description": "Replaces emotes and inserts images from 7tv",
+  "version" : "0.1",
+  "web_accessible_resources" : [
+     "images/*.jpg"
+  ],
+  "content_security_policy" : "img-src 'self' https://cdn.7tv.app/*; default-src ",
+
+  "content_scripts": [
+    {
+      "matches": ["*://*.discord.com/*"],
+      "run_at": "document_end",
+      "css": ["style.css"],
+      "js": ["background.js"]
+    }
+  ],
+  "permissions": [
+    "*://*.discord.com/*",
+    "activeTab"
+  ]
+}
